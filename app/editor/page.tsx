@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useState, useRef, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { useEditorStore } from '@/lib/store/editorStore';
 import { EditorHeader } from '@/components/editor/EditorHeader';
@@ -14,7 +14,7 @@ import { TemplatePicker } from '@/components/editor/TemplatePicker';
 import type { BlogTemplate } from '@/lib/templates';
 import type { Post } from '@/types';
 
-export default function EditorPage() {
+function EditorPageContent() {
   const searchParams = useSearchParams();
   const {
     postMeta,
@@ -509,5 +509,20 @@ export default function EditorPage() {
         />
       )}
     </div>
+  );
+}
+
+export default function EditorPage() {
+  return (
+    <Suspense fallback={
+      <div className="h-screen flex items-center justify-center bg-gray-50">
+        <div className="text-center">
+          <div className="text-6xl mb-4 animate-pulse">✍️</div>
+          <p className="text-lg text-gray-600 font-medium">Loading editor...</p>
+        </div>
+      </div>
+    }>
+      <EditorPageContent />
+    </Suspense>
   );
 }
