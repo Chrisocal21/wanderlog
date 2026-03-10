@@ -1,0 +1,65 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Testing
+coverage/
+*.log
+
+# Next.js
+.next/
+out/
+build/
+dist/
+
+# Production
+.vercel
+
+# Environment Variables
+.env
+.env*.local
+.env.production
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Wrangler
+.wrangler/
+.dev.vars
+
+# R2 Local Testing
+.mf/
+
+# Misc
+*.tsbuildinfo
+.cache/
+
+# PWA
+public/sw.js
+public/workbox-*.js
+public/worker-*.js
+public/sw.js.map
+public/workbox-*.js.map
+public/worker-*.js.map
+
+# Secrets & Config (DO NOT COMMIT)
+secrets.txt
+credentials.txt
+*.pem
+*.key
+
+# Local Database
+*.db
+*.sqlite
+*.sqlite3

@@ -1,0 +1,65 @@
+/* Color Palette Theme Variables */
+
+/* Desert Dusk - Golden hour, warm sand, adventure */
+[data-palette="desert-dusk"] {
+  --color-bg: #F7F0E8;
+  --color-text: #3D2B1F;
+  --color-accent: #C8956C;
+  --color-surface: #EFE4D6;
+}
+
+/* Arctic - Open skies, crisp air, wide open spaces */
+[data-palette="arctic"] {
+  --color-bg: #F0F7FF;
+  --color-text: #1A2D3D;
+  --color-accent: #4A90B8;
+  --color-surface: #E3F0FF;
+}
+
+/* Jungle - Dense green, heat, lush and alive */
+[data-palette="jungle"] {
+  --color-bg: #F0FFF4;
+  --color-text: #1B2E25;
+  --color-accent: #2D6A4F;
+  --color-surface: #E0F5E8;
+}
+
+/* Monochrome - Timeless, elegant, black and white */
+[data-palette="monochrome"] {
+  --color-bg: #F5F5F5;
+  --color-text: #1A1A1A;
+  --color-accent: #555555;
+  --color-surface: #E8E8E8;
+}
+
+/* Sunset - Pink and orange warmth */
+[data-palette="sunset"] {
+  --color-bg: #FFF8F0;
+  --color-text: #2D1A1F;
+  --color-accent: #E8485A;
+  --color-surface: #FFE8DC;
+}
+
+/* Ocean - Coastal calm, deep blue */
+[data-palette="ocean"] {
+  --color-bg: #F0FAFF;
+  --color-text: #0A2C3D;
+  --color-accent: #0077B6;
+  --color-surface: #D9F0FF;
+}
+
+/* Night Market - Dark, moody, electric atmosphere */
+[data-palette="night-market"] {
+  --color-bg: #1A1218;
+  --color-text: #F5F0E8;
+  --color-accent: #FFD166;
+  --color-surface: #2D242A;
+}
+
+/* Sage - Earthy, soft, grounded */
+[data-palette="sage"] {
+  --color-bg: #F5F8F5;
+  --color-text: #2A3A2D;
+  --color-accent: #6B8F71;
+  --color-surface: #E8F0EA;
+}
